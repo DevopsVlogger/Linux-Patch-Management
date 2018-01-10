@@ -4,7 +4,11 @@ root@master_ubuntu1604server:~/playbooks# cat /etc/ansible/hosts
 
 
 [linux-dev-servers]
+
+
 testserver1
+
+
 testserver2
 
 
