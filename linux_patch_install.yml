@@ -1,5 +1,5 @@
 ---
-#### Ansible Playbook to perform patching on RHEL/CentOS Server ####
+#### Ansible Playbook to perform Kernel upgradation on RHEL/CentOS Server ####
 
 - hosts: linux-dev-servers
   become_user: root
