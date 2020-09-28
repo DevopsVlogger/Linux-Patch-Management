@@ -18,8 +18,8 @@
       fail: msg="{{ inventory_hostname }} have running Application.Please stop the application first, then attempt patching."
       when: app_process_check.stdout == "process_running"
 
-    # this task will upgrade/install the rpm's if application is stopped on the server
-    - name:  upgrade all packages on the server
+    # this task will upgrade/install the kernel package if application is stopped on the server
+    - name:  upgrade kernel package on the server
       yum:
        name="kernel"
        state=latest
